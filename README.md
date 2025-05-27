@@ -24,7 +24,7 @@ instagram-clone/
 │   └── style.css           # Main stylesheet
 ├── views/
 │   └── index.ejs           # Home page showing all posts
-│   └── new\.ejs             # Create post page
+│   └── new.ejs             # Create post page
 │   └── edit.ejs            # Edit post page
 ├── app.js                  # Main Express app
 ├── package.json
@@ -97,7 +97,7 @@ node index.js
 
 ## 🙋‍♂️ Author
 
-* **Aakash Singh** – [@aakash-code](https://github.com/asjaga)
+* **Aakash Singh** – [@sjaga](https://github.com/asjaga)
 
 ---
 
