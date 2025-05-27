@@ -69,10 +69,19 @@ node index.js
 
 ## 🖼️ Example Screens
 
-| Home Page                     | Create Post                    | Edit Post                     |
-| ----------------------------- | ------------------------------ | ----------------------------- |
-| ![image](https://github.com/user-attachments/assets/ba62568f-4287-409f-ad61-430c53ee4c37)
- | ![New](screenshots/create.png) | ![Edit](screenshots/edit.png) |
+| Home Page  
+
+ ![image](https://github.com/user-attachments/assets/ba62568f-4287-409f-ad61-430c53ee4c37)
+
+| Create Post                    
+
+![image](https://github.com/user-attachments/assets/d1db111d-9ae4-4143-b27d-a6cd0c95cb4d)
+
+| Edit Post                     |
+
+![image](https://github.com/user-attachments/assets/6de134f2-9985-4f23-9fb9-d78620e46221)
+
+
 
 ---
 
