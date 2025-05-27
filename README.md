@@ -1,5 +1,4 @@
 
-```markdown
 # 📸 Basic Instagram Clone
 
 A simple **Instagram Clone** built using **Node.js**, **Express**, and **EJS**, allowing users to create, view, edit, and delete image posts. Designed with a clean UI and basic social media features like captions, usernames, likes, and sharing icons.
@@ -88,22 +87,7 @@ node app.js
 
 ## 🙋‍♂️ Author
 
-* **Aakash Singh** – [@aakash-code](https://github.com/aakash-code)
+* **Aakash Singh** – [@aakash-code](https://github.com/asjaga)
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-### 📌 Notes:
-- Replace `your-username` with your GitHub username.
-- Add screenshots in a `screenshots/` folder for a professional touch.
-- Update the `LICENSE` section or include a real `LICENSE` file if needed.
-
-Let me know if you'd like a MongoDB version or authentication added later!
-```
