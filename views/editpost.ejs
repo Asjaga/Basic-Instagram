@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit post</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .post{
+            height: 720px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .text{
+            width: 294px;
+            height: 3rem;
+            margin-top: 1.2rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        .icons{
+            margin-top: 1rem;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons i{
+            font-size: 2rem;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            height: 2rem;
+            width: 8rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 0rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <h1><a id="logo" href="/posts">Instagram</a></h1>
+    <input placeholder="Search Post" name="search" id="srch">
+    <h2>Signup/Signin</h2>
+    </div>
+    <hr>
+    <div class="main">
+                <div class="post">
+                        <div class="headpost">
+                        <form method="post" action="/post/<%=post.id%>/edit?_method=PATCH">
+                            <h3>@<%=post.username%></h3>                       
+                            </div>
+                            <img src="<%=post.Image%>" alt="image">
+                            <textarea placeholder="Enter post image link" name="image" class="text"></textarea>
+                            <textarea class="text" name="caption"><%=post.caption%></textarea>
+                            <div class="icons">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-comment"></i>
+                                    <i class="fa-solid fa-share"></i>      
+                                </div>
+                                <p><%=post.likes%> likes</p>
+                            </div>
+                            <button>Submit</button>
+                        </form>
+                    </div >
+    </div>   
+</body>
+</html>

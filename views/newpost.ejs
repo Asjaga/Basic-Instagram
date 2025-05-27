@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New post</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .post{
+            height: 350px;
+            width: 300px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        #user{
+            width: 260px;
+            height: 2rem;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        .text{
+            width: 260px;
+            height: 4rem;
+            margin-top: 1.2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            height: 2rem;
+            width: 8rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <h1><a id="logo" href="/posts">Instagram</a></h1>
+    <input placeholder="Search Post" name="search" id="srch">
+    <h2>Signup/Signin</h2>
+    </div>
+    <hr>
+    <div class="main">
+                <div class="post">
+                        <form method="post" action="/post/new">                    
+                            <input id="user" placeholder="Enter Username" name="username">
+                            <textarea placeholder="Enter post image link" name="image" class="text"></textarea>
+                            <textarea class="text" name="caption" placeholder="Write Caption"></textarea>
+                            <button >Submit</button>
+                        </form>
+                    </div >
+    </div>   
+</body>
+</html>

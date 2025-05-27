@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="heading">
+    <h1><a id="logo" href="/posts">Instagram</a></h1>
+    <input placeholder="Search Post" name="search" id="srch">
+    <h2><a style="color: white;" href="http://localhost:8080/post/new" id="createa"> <i id="createi" class="fa-solid fa-plus" href></i> Create Post </a></h2>
+    </div>
+    <hr>
+    <h2 id="headmain">All Posts</h2>
+    <div class="main">
+        
+            <% for(post of posts){ %>
+                <div class="post">
+                    <div class="headpost">
+                    <h3>@<%=post.username%></h3>
+                    <a href="http://localhost:8080/post/<%=post.id%>/edit">edit post</a>                        
+                    </div>
+                    <img src="<%=post.Image%>" alt="image">
+                    <p id="cap"><%=post.caption%></p>
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fa-solid fa-heart" ></i>
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share"></i>      
+                        </div>
+                        <form method="POST" action="/post/<%=post.id%>?_method=DELETE" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this post?');">
+                            <button class="delete" type="submit" >Delete</button>
+                        </form>
+
+                        
+                    </div>
+                    <p id="likes"><%=post.likes%> likes</p>
+                </div>
+
+           <% } %>
+            
+        
+    </div>
+    
+</body>
+</html>

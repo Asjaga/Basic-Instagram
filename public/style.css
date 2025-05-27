@@ -1,0 +1,91 @@
+body{
+    background-image: url("https://www.wallpaperuse.com/wallp/12-120734_m.jpg");
+    color: white;
+}
+.post h3{
+    padding-left: 0.5rem;
+    text-align: left;
+}
+#headmain{
+    text-align: center;
+}
+#logo{
+    text-decoration: none;
+    color: white;
+}
+.headpost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headpost a{
+    padding-right: 0.5rem;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.post{
+    height: 470px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+
+}
+.delete{
+    margin-right: 0.5rem;
+    background-color: white;
+    text-decoration: underline;
+    border: none;
+    color: blue;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#likes {
+    margin-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+img{
+    height: 300px;
+    width: 295px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    
+}
+
+i{
+    color: black;
+    margin-left: 0.5rem;
+    font-size:1.5rem ;
+}
+#cap{
+    padding-left: 0.5rem;
+}
+#srch{
+    width: 35rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding-left:1rem ;
+}
+.main{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+#createi{
+    color: white;
+    text-decoration: none;
+}
+#createa{
+    color: white;
+    text-decoration: none;
+}
