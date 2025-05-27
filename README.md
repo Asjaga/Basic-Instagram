@@ -60,7 +60,7 @@ npm install
 ### 3. Start the server
 
 ```bash
-node app.js
+node index.js
 ```
 
 > Server will run on `http://localhost:8080`
@@ -71,7 +71,8 @@ node app.js
 
 | Home Page                     | Create Post                    | Edit Post                     |
 | ----------------------------- | ------------------------------ | ----------------------------- |
-| ![Home](screenshots/home.png) | ![New](screenshots/create.png) | ![Edit](screenshots/edit.png) |
+| ![image](https://github.com/user-attachments/assets/ba62568f-4287-409f-ad61-430c53ee4c37)
+ | ![New](screenshots/create.png) | ![Edit](screenshots/edit.png) |
 
 ---
 
